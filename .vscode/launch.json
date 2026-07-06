@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Abrir no Edge (Sem Depurador)",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "cmd.exe",
+            "runtimeArgs": [
+                "/c",
+                "start",
+                "msedge",
+                "${workspaceFolder}/index.html"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
