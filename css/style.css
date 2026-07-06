@@ -62,6 +62,13 @@ main { flex: 1; max-width: 1100px; width: 100%; margin: 0 auto; padding: 2.5rem 
     object-position: center; /* Centraliza o foco da imagem */
 }
 .slide-text h3 { color: var(--verde-principal); margin-bottom: 0.8rem; font-size: 1.4rem; }
+.slide-text h4 {
+    color: var(--verde-principal);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.8rem;
+    margin-bottom: 0.35rem;
+}
 .slide-text p { line-height: 1.6; color: var(--cinza-texto); }
 .carousel-actions { display: flex; justify-content: flex-end; gap: 1rem; margin-top: 1.5rem; border-top: 1px solid var(--cinza-borda); padding-top: 1rem; }
 .btn-carousel { background: var(--branco); border: 1px solid var(--verde-destaque); color: var(--verde-destaque); padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.2s; }
