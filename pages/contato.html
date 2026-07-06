@@ -11,37 +11,61 @@
         <nav class="navbar">
             <div class="logo">Glico<strong>Salva</strong> 🌿</div>
             <ul class="nav-links">
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="sobre.html">Rede SUS & ODS</a></li>
-                <li><a href="contato.html" class="active">Peça Acolhimento</a></li>
+                <li><a href="../index.html">Sobre</a></li>
+                <li><a href="sobre.html">Guia de Acesso</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="calculator-section" style="max-width: 600px; margin: 0 auto;">
-            <h2>Peça Acolhimento Voluntário</h2>
-            <p>Inscreva-se abaixo para receber mensagens de apoio de veteranos em Salvador.</p>
-            
-            <form id="form-ajuda" class="custom-form">
-                <div class="input-group full-width">
-                    <label>Seu Nome:</label>
-                    <input type="text" id="nome-user" required placeholder="Nome completo">
+<main>
+        <section class="contact-section">
+            <h2>Fale Conosco</h2>
+            <p>Sua opinião é fundamental para evoluirmos nosso projeto acadêmico. Tem dúvidas, sugestões de melhoria para a plataforma ou encontrou algum erro em nossos guias? Envie uma mensagem pelo formulário abaixo.</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
                 </div>
-                <div class="input-group full-width">
-                    <label>Bairro de Salvador:</label>
-                    <input type="text" id="bairro-user" required placeholder="Ex: Brotas, Cabula, Pituba...">
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
                 </div>
-                <div class="input-group full-width">
-                    <label>Sua maior dúvida atual:</label>
-                    <textarea id="duvida-user" rows="4" required placeholder="O que mais te preocupa no momento?"></textarea>
+
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto">
+                        <option value="duvida">Dúvida sobre os Guias</option>
+                        <option value="sugestao">Sugestão de Melhoria</option>
+                        <option value="locais">Atualização de Locais/Endereços</option>
+                        <option value="outro">Outro</option>
+                    </select>
                 </div>
-                <button type="submit" class="btn-primary" style="margin-top: 1rem;">Solicitar Contato</button>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
             </form>
-            <div id="sucesso-box" class="result-box hidden" style="background: #e6fffa; border-color: var(--verde-principal);"></div>
+
+            <!-- Nova Área de Informações -->
+            <div class="contato-info-box" style="margin-top: 2.5rem; padding: 1.5rem; background: var(--verde-claro); border-radius: 8px; border: 1px solid #c8e1cc; text-align: left;">
+                <h3 style="color: var(--verde-principal); font-size: 1.15rem; margin-bottom: 1rem; border-bottom: 2px solid var(--verde-destaque); padding-bottom: 0.5rem; display: inline-block;">Informações</h3>
+                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; color: var(--cinza-texto); font-size: 0.95rem;">
+                    <li><strong>📧 Email:</strong> contato@meuguiadiabetes.com</li>
+                    <li><strong>📍 Projeto Acadêmico - ODS 3:</strong> Saúde e Bem-Estar</li>
+                    <li style="margin-top: 0.5rem; color: #9b2c2c; font-size: 0.88rem; background: #fff5f5; padding: 0.5rem 0.8rem; border-radius: 4px; border-left: 3px solid #c53030;">
+                        <strong>🩺 Aviso Legal:</strong> Conteúdo apenas informativo. Procure sempre orientação médica para decisões sobre o seu tratamento.
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
-
+    
     <footer>
         <p>Projeto Acadêmico • ODS 3 (Saúde e Bem-Estar) • Feito para Salvador/BA</p>
     </footer>
