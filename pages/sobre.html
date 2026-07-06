@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre e Locais | GlicoSalva</title>
-    <!-- Repare nos dois pontos (..) para conseguir sair da pasta pages e entrar na css -->
+    <title>Rede SUS & ODS | GlicoSalva</title>
     <link rel="stylesheet" href="../css/style.css"> 
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Glico<strong>Salva</strong> 🔵</div>
+            <div class="logo">Glico<strong>Salva</strong> 🌿</div>
             <ul class="nav-links">
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre.html" class="active">Rede SUS & ODS</a></li>
@@ -19,30 +18,46 @@
         </nav>
     </header>
 
-    <main class="container">
-        <section class="info-section">
-            <h2>O Objetivo 3 da ONU e a Nossa Cidade</h2>
-            <p>O <strong>Objetivo de Desenvolvimento Sustentável 3</strong> visa garantir vida saudável para todos. Em Salvador, milhares de pessoas dão entrada nas UPAs por cetoacidose ou hipoglicemia severa simplesmente porque saíram do consultório médico com uma receita na mão, mas sem saber o que fazer na primeira semana.</p>
+<main>
+        <!-- Introdução Prática de Navegação na Rede SUS -->
+        <section class="intro-section">
+            <h2>Guia de Acesso à Rede SUS em Salvador</h2>
+            <p>Sair do consultório com o diagnóstico é apenas o primeiro passo. Abaixo explicamos como funciona o fluxo na capital baiana para você cadastrar e retirar gratuitamente suas insulinas, fitas de medição e glicosímetro na rede pública ou buscar apoio em centros especializados.</p>
         </section>
 
-        <section id="instituicoes">
-            <h2>Onde buscar apoio em Salvador</h2>
-            <div class="institutos-list">
-                <div class="inst-item">
-                    <h3>CEDEBA - Centro de Referência Estadual</h3>
-                    <p>📍 <strong>Endereço:</strong> Av. Antônio Carlos Magalhães, s/n - Ed. Professor José Maria de Magalhães Neto, Salvador.</p>
-                    <p>O maior centro público da Bahia. Atende casos encaminhados pelas Unidades Básicas de Saúde (Postos de Saúde do bairro).</p>
-                </div>
-                <div class="inst-item">
-                    <h3>Associação de Diabéticos da Bahia (ADBA)</h3>
-                    <p>📍 <strong>Endereço:</strong> Rua Rui Barbosa, 62 - Centro (Próximo à Praça Castro Alves).</p>
-                    <p>ONG que oferece acolhimento psicológico, palestras educativas e orientação jurídica para liberação de medicação de alto custo.</p>
-                </div>
-                <div class="inst-item">
-                    <h3>Multicentros de Saúde (Prefeitura)</h3>
-                    <p>📍 <strong>Polos principais:</strong> Multicentro Vale das Pedrinhas, Liberdade e Carlos Gomes.</p>
-                    <p>Locais de cadastro na Farmácia Básica do Município para retirada mensal de canetas de insulina e fitas de medição.</p>
-                </div>
+        <!-- Seção Informativa de Documentos e Fluxo -->
+        <section class="calculator-section" style="margin-bottom: 2rem;">
+            <h2>O que você precisa levar antes de ir aos locais:</h2>
+            <p style="line-height: 1.6; margin-top: 0.5rem; color: var(--cinza-texto);">
+                Para conseguir a liberação contínua de insumos (Farmácia Básica ou Componente Especializado do Estado), você precisará reunir os seguintes documentos originais e cópias:
+            </p>
+            <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.7; color: var(--cinza-texto);">
+                <li><strong>Cartão SUS</strong> (atualizado com endereço de Salvador);</li>
+                <li><strong>Documento de Identidade com foto (RG ou CNH)</strong> e CPF;</li>
+                <li><strong>Comprovante de residência de Salvador</strong> emitido nos últimos 90 dias no nome do paciente ou responsável legal;</li>
+                <li><strong>Receita Médica e LME (Laudo de Medicamento Especializado):</strong> Formulário preenchido e carimbado pelo seu médico (do posto de saúde, UPA ou particular) contendo o CID da doença (ex: E10 para Tipo 1 ou E11 para Tipo 2).</li>
+            </ul>
+            <div style="background: var(--verde-claro); padding: 1rem; border-left: 4px solid var(--verde-principal); border-radius: 6px;">
+                💡 <strong>Dica de Fluxo:</strong> Seu atendimento sempre começa na <strong>Unidade Básica de Saúde (Posto de Saúde)</strong> do seu bairro. É o clínico geral ou médico da família do posto que emite o encaminhamento oficial para centros de alta complexidade como o CEDEBA ou para a retirada mensal nos Multicentros.
+            </div>
+        </section>
+
+        <!-- Grid com Locais e Endereços -->
+        <section class="cards-grid">
+            <div class="card">
+                <h3>CEDEBA - Centro Estadual</h3>
+                <p><strong>Endereço:</strong> Av. Antônio Carlos Magalhães, s/n - Ed. Prof. José Maria de Magalhães Neto, Itaigara.</p>
+                <p>Referência do Governo do Estado da Bahia em endocrinologia. Atende pacientes encaminhados pela rede básica com casos complexos, bombas de infusão e acompanhamento multidisciplinar.</p>
+            </div>
+            <div class="card">
+                <h3>Associação ADBA</h3>
+                <p><strong>Endereço:</strong> Rua Rui Barbosa, 62 - Centro (Próximo à Praça Castro Alves).</p>
+                <p>Entidade filantrópica de utilidade pública em Salvador. Oferece acolhimento psicológico, palestras educativas para recém-diagnosticados e orientação jurídica para direitos do diabético.</p>
+            </div>
+            <div class="card">
+                <h3>Multicentros de Saúde (Prefeitura)</h3>
+                <p><strong>Polos Principais:</strong> Multicentro Vale das Pedrinhas, Liberdade e Carlos Gomes.</p>
+                <p>Unidades da Prefeitura de Salvador responsáveis pelo cadastramento e dispensação mensal de canetas de insulina (NPH/Regular), glicosímetros, lancetas e fitas para automonitoramento.</p>
             </div>
         </section>
     </main>
@@ -50,7 +65,5 @@
     <footer>
         <p>Projeto Acadêmico • ODS 3 (Saúde e Bem-Estar) • Feito para Salvador/BA</p>
     </footer>
-
-    <script src="../scripts/main.js"></script>
 </body>
 </html>

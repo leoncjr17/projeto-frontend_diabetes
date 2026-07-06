@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Glico<strong>Salva</strong> 🔵</div>
+            <div class="logo">Glico<strong>Salva</strong> 🌿</div>
             <ul class="nav-links">
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre.html">Rede SUS & ODS</a></li>
@@ -18,35 +18,28 @@
         </nav>
     </header>
 
-    <main class="container">
-        <h2>Conecte-se com um "Padrinho de Glicose"</h2>
-        <p>Preencha os dados. Um voluntário veterano da nossa rede de Salvador entrará em contato pelo WhatsApp para tirar suas dúvidas básicas.</p>
-
-        <form id="form-ajuda" class="custom-form">
-            <div class="input-box">
-                <label>Seu Nome ou Apelido:</label>
-                <input type="text" id="nome-user" required placeholder="Ex: João da Silva">
-            </div>
-            <div class="input-box">
-                <label>Qual seu bairro em Salvador?</label>
-                <input type="text" id="bairro-user" required placeholder="Ex: Cajazeiras X, Itapuã, Brotas...">
-            </div>
-            <div class="input-box">
-                <label>Você é:</label>
-                <select id="tipo-user">
-                    <option>Paciente recém-diagnosticado</option>
-                    <option>Familiar / Mãe / Pai de paciente</option>
-                    <option>Profissional de Saúde querendo voluntariar</option>
-                </select>
-            </div>
-            <div class="input-box">
-                <label>Qual sua maior angústia hoje?</label>
-                <textarea rows="4" required placeholder="Tenho medo da agulha? Não sei o que comer no café?"></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Solicitar contato voluntário</button>
-        </form>
-
-        <div id="sucesso-box" class="hidden success-msg"></div>
+    <main>
+        <section class="calculator-section" style="max-width: 600px; margin: 0 auto;">
+            <h2>Peça Acolhimento Voluntário</h2>
+            <p>Inscreva-se abaixo para receber mensagens de apoio de veteranos em Salvador.</p>
+            
+            <form id="form-ajuda" class="custom-form">
+                <div class="input-group full-width">
+                    <label>Seu Nome:</label>
+                    <input type="text" id="nome-user" required placeholder="Nome completo">
+                </div>
+                <div class="input-group full-width">
+                    <label>Bairro de Salvador:</label>
+                    <input type="text" id="bairro-user" required placeholder="Ex: Brotas, Cabula, Pituba...">
+                </div>
+                <div class="input-group full-width">
+                    <label>Sua maior dúvida atual:</label>
+                    <textarea id="duvida-user" rows="4" required placeholder="O que mais te preocupa no momento?"></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="margin-top: 1rem;">Solicitar Contato</button>
+            </form>
+            <div id="sucesso-box" class="result-box hidden" style="background: #e6fffa; border-color: var(--verde-principal);"></div>
+        </section>
     </main>
 
     <footer>
